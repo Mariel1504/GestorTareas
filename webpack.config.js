@@ -24,5 +24,10 @@ module.exports = {
                 },
             ],
         },
-        
-}
+        devtool: 'sourse-map', //generar source maps para faciliatar la depueracion 
+        devServer: {
+            contentBase: path.resolve(__dirname,  'dist'), //carpeta principal del servido 
+            compress: true, //habilitar la comprension 
+            port: 9000, //puerto del servido  de desarollo
+        },
+};
